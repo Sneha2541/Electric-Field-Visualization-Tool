@@ -50,7 +50,7 @@ plt.quiver(X, Y, Ex, Ey, color='b', headlength=5)
 contour = plt.contour(X, Y, V, levels=20, cmap='RdYlBu', alpha=0.5)
 plt.colorbar(contour, label='Electric Potential (V)')
 
-# Mark charges
+# Mark changes for charges
 for charge in charges:
     plt.plot(charge['position'][0], charge['position'][1], 'ro' if charge['magnitude'] > 0 else 'bo', markersize=12)
 
